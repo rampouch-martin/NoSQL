@@ -199,6 +199,22 @@ services:
       - 27130:27017
     restart: always
 
+  cluster-init:
+    container_name: cluster-init
+    build: 
+      context: mongodb-build
+    depends_on:
+      - configsvr01
+      - configsvr02
+      - configsvr03
+      - shard01-a
+      - shard02-a
+      - shard03-a
+      - router01
+    volumes:
+      - ./scripts:/scripts
+    entrypoint: ["/bin/bash", "/scripts/init-all.sh"]
+
 volumes:
   mongodb_cluster_router01_db:
   mongodb_cluster_router01_config:

@@ -206,12 +206,13 @@ services:
   #   depends_on:
   #     - configsvr01
   #     - shard01-a
-  #     - shard02-aa
+  #     - shard02-a
   #     - shard03-a
   #     - router01
   #   volumes:
   #     - ./scripts:/scripts
-  #   entrypoint: ["bash", "/scripts/cluster-init.sh"]
+  #   entrypoint: ["bash", "/scripts/manual-cluster-init.sh"]
+
 
 volumes:
   mongodb_cluster_router01_db:

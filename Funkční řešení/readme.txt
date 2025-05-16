@@ -27,3 +27,19 @@ https://github.com/dmuiruri/woltorders
 
 
 https://www.kaggle.com/datasets/heeraldedhia/groceries-dataset
+
+
+
+# vytvoř venv ve složce .venv
+python3 -m venv .venv
+
+# aktivuj ho
+source .venv/bin/activate
+
+# nainstaluj pandas (už to půjde)
+pip install pandas
+
+
+python clean_and_crop_data.py
+
+deactivate

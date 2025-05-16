@@ -43,3 +43,10 @@ pip install pandas
 python clean_and_crop_data.py
 
 deactivate
+
+
+identifikatory:
+Adv_ID, Genmodel_ID 
+
+
+docker compose exec router01 mongosh -u martin -p rampouch --authenticationDatabase admin

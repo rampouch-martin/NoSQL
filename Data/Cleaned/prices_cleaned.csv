@@ -1,0 +1,648 @@
+Maker,Genmodel,Genmodel_ID,Year,Entry_price
+Abarth,124 Spider,2_1,2016,29365
+Abarth,500,2_2,2009,13400
+Abarth,500C,2_3,2010,17290
+Abarth,595,2_4,2012,17500
+Abarth,695,2_6,2016,20105
+Abarth,Grande Punto,2_8,2008,13355
+Abarth,Punto Evo,2_9,2010,16320
+Alfa Romeo,147,4_1,2001,12805
+Alfa Romeo,Giulia,4_10,2016,28995
+Alfa Romeo,Giulietta,4_11,2010,16815
+Alfa Romeo,GT,4_12,2004,20802
+Alfa Romeo,GTV,4_13,1998,21769
+Alfa Romeo,MiTo,4_14,2009,10570
+Alfa Romeo,Spider,4_15,1998,23156
+Alfa Romeo,Stelvio,4_16,2017,33775
+Alfa Romeo,156,4_2,1998,17423
+Alfa Romeo,159,4_4,2006,18347
+Alfa Romeo,166,4_6,1998,23196
+Alfa Romeo,4C,4_7,2014,44765
+Alfa Romeo,Brera,4_9,2006,22572
+Aston Martin,Virage,6_10,2010,149995
+Aston Martin,DB11,6_2,2016,157900
+Aston Martin,DB7,6_3,1998,84950
+Aston Martin,DB9,6_4,2004,103711
+Aston Martin,DBS,6_5,2008,160887
+Aston Martin,Rapide,6_6,2010,140837
+Aston Martin,Vanquish,6_8,2001,158711
+Aston Martin,Vantage,6_9,2005,80706
+Audi,A1,7_1,2010,13090
+Audi,A6,7_11,1998,22970
+Audi,A7,7_15,2010,42760
+Audi,A8,7_16,1998,36420
+Audi,Q2,7_18,2016,20175
+Audi,Q3,7_19,2011,24390
+Audi,A2,7_2,2000,13770
+Audi,Q5,7_20,2008,26845
+Audi,Q7,7_21,2006,37077
+Audi,R8,7_23,2007,76475
+Audi,A3,7_3,1998,15051
+Audi,TT,7_46,1999,26470
+Audi,Q8,7_49,2018,63745
+Audi,A4,7_5,1998,16879
+Audi,A5,7_9,2007,25975
+Bentley,Arnage,10_1,1998,145000
+Bentley,Bentayga,10_3,2015,160200
+Bentley,Brooklands,10_4,2007,230000
+Bentley,Continental,10_5,2003,110000
+Bentley,Flying Spur,10_6,2012,140900
+Bentley,Mulsanne,10_7,2010,220000
+BMW,1 Series,8_1,2004,15507
+BMW,6 Series,8_11,2004,45057
+BMW,7 Series,8_14,1998,36300
+BMW,Alpina B3,8_16,2012,55285
+BMW,Alpina B5,8_18,2010,69695
+BMW,Alpina B6,8_19,2011,92005
+BMW,2 Series,8_2,2013,24210
+BMW,Alpina D5 Bi-Turbo,8_23,2011,55730
+BMW,i3,8_27,2013,30625
+BMW,i8,8_28,2014,99790
+BMW,X1,8_35,2009,23150
+BMW,X2,8_36,2017,29780
+BMW,X3,8_37,2004,25972
+BMW,X4,8_38,2014,36395
+BMW,X5,8_39,2000,32820
+BMW,X6,8_41,2008,41700
+BMW,Z3,8_43,1998,21330
+BMW,Z4,8_45,2003,24070
+BMW,3 Series,8_5,1998,14520
+BMW,4 Series,8_7,2013,29005
+BMW,5 Series,8_9,1998,24230
+Cadillac,BLS,14_1,2005,20500
+Cadillac,CTS,14_2,2005,24625
+Cadillac,Escalade,14_3,2005,44647
+Cadillac,SRX,14_4,2006,29647
+Cadillac,STS,14_5,2008,33540
+Chevrolet,Kalos,16_10,2004,6832
+Chevrolet,Lacetti,16_11,2004,9312
+Chevrolet,Matiz,16_12,2004,5832
+Chevrolet,Orlando,16_13,2010,16090
+Chevrolet,Spark,16_14,2010,6890
+Chevrolet,Tacuma,16_16,2005,10792
+Chevrolet,Trax,16_18,2012,15265
+Chevrolet,Volt,16_19,2012,34940
+Chevrolet,Aveo,16_2,2008,7520
+Chevrolet,Blazer,16_3,1999,22075
+Chevrolet,Camaro,16_4,2011,33940
+Chevrolet,Captiva,16_5,2007,16740
+Chevrolet,Cruze,16_7,2009,11790
+Chevrolet,Epica,16_8,2008,13330
+Chrysler,300C,17_1,2005,25542
+Chrysler,Ypsilon,17_10,2011,10640
+Chrysler,Crossfire,17_2,2003,27075
+Chrysler,Delta,17_3,2011,16510
+Chrysler,Grand Voyager,17_4,1998,21745
+Chrysler,Neon,17_5,1998,11820
+Chrysler,PT Cruiser,17_7,2000,14815
+Chrysler,Sebring,17_8,2001,22815
+Chrysler,Voyager,17_9,1998,18245
+Citroen,C3 Picasso,18_10,2009,11290
+Citroen,C3 Pluriel,18_11,2003,11845
+Citroen,C4,18_12,2004,10932
+Citroen,C4 Cactus,18_13,2014,12935
+Citroen,C4 Picasso,18_14,2007,14267
+Citroen,C5,18_15,2001,14430
+Citroen,C6,18_16,2006,27847
+Citroen,C8,18_17,2003,18115
+Citroen,Dispatch,18_18,2006,18379
+Citroen,Berlingo,18_2,1998,10660
+Citroen,Grand C4 Picasso,18_24,2007,14767
+Citroen,Nemo Multispace,18_25,2008,9795
+Citroen,Saxo,18_26,1998,6845
+Citroen,SpaceTourer,18_27,2016,27750
+Citroen,Synergie,18_28,1998,16200
+Citroen,Xsara,18_29,1998,9845
+Citroen,Berlingo Multispace,18_3,2008,10730
+Citroen,Xsara Picasso,18_30,2000,13420
+Citroen,Xantia,18_31,1998,11370
+Citroen,C-Crosser,18_4,2007,19730
+Citroen,C-Zero,18_5,2010,33100
+Citroen,C1,18_6,2005,6382
+Citroen,C2,18_7,2003,7365
+Citroen,C3,18_8,2002,8370
+Citroen,C3 Aircross,18_9,2017,13780
+Corvette,C6,19_1,2005,45647
+Corvette,Stingray,19_3,2013,60375
+Dacia,Duster,22_1,2012,8770
+Dacia,Logan MCV,22_2,2012,6815
+Dacia,Sandero,22_3,2012,5820
+Daewoo,Kalos,23_1,2002,7345
+Daewoo,Lacetti,23_2,2004,9312
+Daewoo,Matiz,23_3,1998,6145
+Daewoo,Nubira,23_4,1998,11845
+Daewoo,Tacuma,23_5,2000,10815
+Daewoo,Lanos,23_6,1998,8315
+Daewoo,Leganza,23_7,1998,13645
+Daewoo,Musso,23_8,1998,17820
+Daihatsu,Charade,24_2,1998,7655
+Daihatsu,Copen,24_3,2004,12832
+Daihatsu,Cuore,24_4,1998,5820
+Daihatsu,Fourtrak,24_5,1998,14250
+Daihatsu,Materia,24_6,2007,10780
+Daihatsu,Sirion,24_7,1998,7820
+Daihatsu,Terios,24_8,1998,12120
+Daihatsu,YRV,24_9,2001,7870
+Dodge,Avenger,26_1,2007,14780
+Dodge,Caliber,26_2,2006,11307
+Dodge,Journey,26_5,2008,16730
+Dodge,Nitro,26_6,2007,18645
+DS,3,21_1,2010,11525
+DS,4,21_3,2011,17965
+DS,5,21_5,2011,22345
+Ferrari,612,27_11,2004,170500
+Ferrari,812 Superfast,27_12,2017,260908
+Ferrari,California,27_13,2008,139825
+Ferrari,F12berlinetta,27_16,2012,238232
+Ferrari,F355,27_17,1998,99064
+Ferrari,F430,27_18,2005,118297
+Ferrari,FF,27_19,2011,225171
+Ferrari,360,27_2,1999,101244
+Ferrari,Gtc4lusso,27_20,2019,198110
+Ferrari,Portofino,27_23,2019,164425
+Ferrari,456,27_4,1998,167714
+Ferrari,458,27_6,2010,168541
+Ferrari,488,27_7,2015,182809
+Ferrari,550,27_8,1998,149701
+Fiat,124 Spider,28_1,2016,19345
+Fiat,Bravo,28_10,1998,9815
+Fiat,Croma,28_11,2005,14807
+Fiat,Doblo,28_12,2001,8530
+Fiat,Fiorino,28_13,2007,10680
+Fiat,Grande Punto,28_15,2006,7351
+Fiat,Idea,28_16,2004,9832
+Fiat,Multipla,28_17,2000,13200
+Fiat,Panda,28_18,2003,6152
+Fiat,Punto,28_19,1998,7345
+Fiat,500,28_2,2008,7815
+Fiat,Punto Evo,28_20,2010,9430
+Fiat,Qubo,28_21,2008,9550
+Fiat,Scudo,28_22,2006,17815
+Fiat,Sedici,28_23,2006,12307
+Fiat,Seicento,28_24,1998,5820
+Fiat,Stilo,28_26,2002,10710
+Fiat,Tipo,28_28,2016,12810
+Fiat,Ulysse,28_29,1998,17004
+Fiat,Marea,28_30,1998,12574
+Fiat,500L,28_4,2012,14800
+Fiat,500X,28_5,2014,14395
+Fiat,Barchetta,28_8,1998,15700
+Fiat,Brava,28_9,1998,9815
+Ford,B-Max,29_1,2012,12820
+Ford,Fiesta,29_13,1998,7640
+Ford,Focus,29_14,1998,12675
+Ford,Focus C-Max,29_15,2003,13005
+Ford,Fusion,29_18,2002,9850
+Ford,Galaxy,29_19,1998,17505
+Ford,C-Max,29_2,2010,16535
+Ford,Grand C-Max,29_20,2010,18535
+Ford,Grand Tourneo Connect,29_21,2013,16690
+Ford,Ka,29_23,1998,7845
+Ford,Kuga,29_25,2008,18396
+Ford,Maverick,29_26,1998,19260
+Ford,Mondeo,29_27,1998,13845
+Ford,Mustang,29_28,2015,29590
+Ford,Puma,29_29,1998,13050
+Ford,Cougar,29_3,1998,19825
+Ford,S-Max,29_31,2006,16767
+Ford,Streetka,29_32,2002,12315
+Ford,Tourneo Connect,29_34,2013,14190
+Ford,Transit Courier,29_37,2019,17870
+Ford,Tourneo Courier,29_39,2019,14555
+Ford,EcoSport,29_4,2013,14800
+Ford,Edge,29_5,2015,29795
+Ford,Explorer,29_9,1998,26145
+Honda,Accord,34_1,1999,15120
+Honda,Integra,34_10,1998,19350
+Honda,Jazz,34_11,2002,8870
+Honda,Legend,34_12,1998,33875
+Honda,S2000,34_16,1999,27815
+Honda,Stream,34_18,2001,14830
+Honda,Prelude,34_19,1998,18845
+Honda,Civic,34_2,1998,9815
+Honda,CR-V,34_3,1998,16275
+Honda,CR-Z,34_4,2010,16944
+Honda,FR-V,34_7,2004,14567
+Honda,HR-V,34_8,1999,12815
+Honda,Insight,34_9,2000,16875
+Hummer,H2,35_2,2007,48720
+Hummer,H3,35_3,2007,26145
+Hyundai,Accent,36_1,1998,6819
+Hyundai,i30,36_10,2007,10830
+Hyundai,i40,36_12,2011,17225
+Hyundai,i800,36_13,2008,19230
+Hyundai,Ioniq,36_14,2016,19940
+Hyundai,ix20,36_15,2010,11540
+Hyundai,ix35,36_16,2010,15985
+Hyundai,Kona,36_17,2017,15980
+Hyundai,Matrix,36_18,2001,10819
+Hyundai,Amica,36_2,2000,6674
+Hyundai,Santa Fe,36_20,2001,15819
+Hyundai,Sonata,36_21,1998,13824
+Hyundai,Terracan,36_22,2003,18305
+Hyundai,Trajet,36_23,2000,15319
+Hyundai,Tucson,36_24,2004,13797
+Hyundai,Veloster,36_25,2011,17810
+Hyundai,XG30,36_26,2000,20819
+Hyundai,Coupe,36_3,1998,13824
+Hyundai,Elantra,36_4,1998,10424
+Hyundai,Genesis,36_5,2014,46850
+Hyundai,Getz,36_6,2002,6870
+Hyundai,Grandeur,36_7,2006,26247
+Hyundai,i10,36_8,2008,6410
+Hyundai,i20,36_9,2009,8020
+Infiniti,EX,37_1,2009,34740
+Infiniti,FX,37_2,2009,42140
+Infiniti,G,37_3,2009,29840
+Infiniti,M,37_4,2010,34345
+Infiniti,Q30,37_5,2015,20365
+Infiniti,Q50,37_6,2013,27895
+Infiniti,Q60,37_7,2016,33750
+Infiniti,QX30,37_9,2015,29435
+Isuzu,Trooper,38_4,1998,18925
+Jaguar,E-PACE,39_1,2017,28285
+Jaguar,XK8,39_10,1998,50480
+Jaguar,F-PACE,39_2,2015,34115
+Jaguar,F-Type,39_3,2012,57845
+Jaguar,S-Type,39_4,1998,28120
+Jaguar,X-Type,39_5,2001,19810
+Jaguar,XE,39_6,2014,26585
+Jaguar,XF,39_7,2008,33440
+Jaguar,XJ,39_8,1998,35030
+Jaguar,XK,39_9,2006,58752
+Jeep,Cherokee,40_1,1998,18045
+Jeep,Commander,40_2,2005,27237
+Jeep,Compass,40_3,2007,17740
+Jeep,Grand Cherokee,40_4,1998,26345
+Jeep,Patriot,40_5,2007,15740
+Jeep,Renegade,40_6,2014,18640
+Jeep,Wrangler,40_7,1998,14045
+Kia,Carens,43_1,2000,9815
+Kia,Sedona,43_10,2001,13815
+Kia,Sorento,43_11,2003,17805
+Kia,Soul,43_12,2009,10290
+Kia,Sportage,43_13,1998,12815
+Kia,Stinger,43_14,2017,31140
+Kia,Stonic,43_15,2017,16080
+Kia,Venga,43_16,2010,11315
+Kia,Sephia,43_17,1998,8315
+Kia,Soul EV,43_18,2019,30440
+Kia,'Cee''d',43_2,2007,10330
+Kia,Cerato,43_3,1999,10815
+Kia,Magentis,43_4,2001,12815
+Kia,Niro,43_5,2016,21240
+Kia,Optima,43_6,2011,19540
+Kia,Picanto,43_7,2004,5382
+Kia,'Pro_Cee''d',43_8,2007,12105
+Kia,Rio,43_9,2001,5830
+Lamborghini,Aventador,45_1,2011,256020
+Lamborghini,Gallardo,45_3,2003,115000
+Lamborghini,Huracan,45_4,2014,180720
+Lamborghini,Murcielago,45_5,2002,162000
+Land Rover,Discovery Sport,47_10,2014,32160
+Land Rover,Freelander,47_11,1998,16395
+Land Rover,Range Rover,47_13,1998,38800
+Land Rover,Range Rover Evoque,47_14,2011,27785
+Land Rover,Range Rover Sport,47_15,2005,34792
+Land Rover,Range Rover Velar,47_16,2017,44575
+Land Rover,Discovery,47_6,1998,21095
+Lexus,CT,48_1,2010,23430
+Lexus,LC,48_14,2016,74540
+Lexus,LS,48_15,1998,49824
+Lexus,NX,48_18,2014,29440
+Lexus,GS,48_2,1998,31050
+Lexus,RC,48_21,2014,59080
+Lexus,RX,48_24,2000,28770
+Lexus,SC,48_30,2001,50645
+Lexus,IS,48_8,1999,20320
+Lotus,Elise,51_3,1998,21700
+Lotus,Evora,51_6,2008,48180
+Lotus,Exige,51_7,2000,29995
+Maserati,Quattroporte,55_10,2004,69797
+Maserati,Spyder,55_11,2001,65570
+Maserati,Coupe,55_4,2001,59770
+Maserati,Ghibli,55_5,2013,48600
+Maserati,GranCabrio,55_6,2010,95170
+Maserati,Gransport,55_7,2004,66600
+Maserati,Granturismo,55_8,2007,78150
+Maserati,Levante,55_9,2016,53780
+Maybach,57,56_1,2002,243600
+Maybach,62,56_2,2002,281200
+Mazda,323,57_1,1998,10760
+Mazda,Mazda2,57_10,2003,8635
+Mazda,Mazda3,57_11,2004,10467
+Mazda,Mazda5,57_12,2005,14097
+Mazda,Mazda6,57_13,2002,13315
+Mazda,MPV,57_14,1999,19620
+Mazda,MX-5,57_15,1998,15345
+Mazda,Premacy,57_17,1999,14225
+Mazda,RX-8,57_18,2003,19815
+Mazda,Tribute,57_19,2001,15815
+Mazda,626,57_2,1998,13820
+Mazda,CX-3,57_6,2014,17410
+Mazda,CX-5,57_7,2011,21220
+Mazda,CX-7,57_8,2007,23610
+Mazda,Demio,57_9,1998,10415
+McLaren,540C,58_2,2019,135000
+McLaren,570GT,58_3,2019,157000
+McLaren,570S,58_4,2019,149000
+McLaren,600LT,58_9,2019,185500
+Mercedes-Benz,Amg Gt,59_10,2014,109805
+Mercedes-Benz,B Class,59_11,2005,16807
+Mercedes-Benz,C Class,59_12,1998,18900
+Mercedes-Benz,CL,59_15,1999,70435
+Mercedes-Benz,CLA Class,59_16,2012,24300
+Mercedes-Benz,CLC Class,59_17,2008,18595
+Mercedes-Benz,CLK,59_18,1998,27145
+Mercedes-Benz,CLS,59_19,2005,42767
+Mercedes-Benz,E Class,59_20,1998,24800
+Mercedes-Benz,G Class,59_21,2010,78970
+Mercedes-Benz,GL Class,59_22,2006,51422
+Mercedes-Benz,GLA Class,59_23,2013,25795
+Mercedes-Benz,GLC Class,59_24,2015,34895
+Mercedes-Benz,GLE Class,59_25,2015,49045
+Mercedes-Benz,GLS Class,59_26,2015,68555
+Mercedes-Benz,M Class,59_27,1999,28595
+Mercedes-Benz,R Class,59_28,2006,36167
+Mercedes-Benz,S Class,59_29,1998,42395
+Mercedes-Benz,SL Class,59_30,1998,53947
+Mercedes-Benz,SLC,59_31,2015,30295
+Mercedes-Benz,SLK,59_32,1998,31395
+Mercedes-Benz,V Class,59_36,1998,22145
+Mercedes-Benz,Vaneo,59_37,2001,14500
+Mercedes-Benz,Viano,59_38,2004,22682
+Mercedes-Benz,A Class,59_8,1998,14245
+MG,GS,53_1,2015,14810
+MG,MG3,53_2,2013,8219
+MG,MG6,53_3,2011,15141
+MG,TF,53_5,1998,17820
+MG,ZR,53_6,2001,9850
+MG,ZS,53_7,2001,12330
+MG,ZT,53_8,2001,18415
+MINI,Clubman,54_1,2007,14070
+MINI,Cooper s,54_10,2001,14320
+MINI,Convertible,54_3,2003,13142
+MINI,Countryman,54_4,2010,15835
+MINI,Coupe,54_5,2011,16585
+MINI,Hatch,54_6,2001,10155
+MINI,Paceman,54_7,2012,18795
+MINI,Roadster,54_8,2011,17845
+MINI,John Cooper Works,54_9,2008,20795
+Mitsubishi,ASX,62_1,2010,14999
+Mitsubishi,Grandis,62_10,2005,18296
+Mitsubishi,i,62_12,2007,8999
+Mitsubishi,Lancer,62_14,1999,10815
+Mitsubishi,Mirage,62_15,2013,8999
+Mitsubishi,Outlander,62_16,2004,16801
+Mitsubishi,Shogun,62_18,1998,20245
+Mitsubishi,Shogun Pinin,62_19,2000,12315
+Mitsubishi,Carisma,62_2,1998,12245
+Mitsubishi,Shogun Sport,62_20,1998,20190
+Mitsubishi,Space Star,62_21,1999,11020
+Mitsubishi,Space Wagon,62_22,1998,16494
+Mitsubishi,Colt,62_3,1998,9820
+Mitsubishi,Eclipse Cross,62_7,2017,20720
+Mitsubishi,FTO,62_8,2000,22815
+Mitsubishi,Galant,62_9,1998,17275
+Nissan,350 Z,64_1,2003,23815
+Nissan,GT-R,64_13,2009,54440
+Nissan,Juke,64_14,2010,12615
+Nissan,Leaf,64_16,2010,30935
+Nissan,Micra,64_17,1998,7320
+Nissan,Murano,64_19,2005,29602
+Nissan,370 Z,64_2,2009,26440
+Nissan,Note,64_21,2006,9852
+Nissan,NV200,64_22,2010,15628
+Nissan,Pathfinder,64_24,2005,22742
+Nissan,Patrol,64_25,1998,21000
+Nissan,Pixo,64_28,2009,6905
+Nissan,Almera,64_3,1998,9820
+Nissan,Primera,64_31,1998,13645
+Nissan,Pulsar,64_32,2014,15940
+Nissan,Qashqai,64_33,2007,13309
+Nissan,Qashqai+2,64_34,2008,15267
+Nissan,Serena,64_35,1998,15445
+Nissan,Terrano,64_38,1998,16485
+Nissan,Almera Tino,64_4,2000,14020
+Nissan,X-Trail,64_41,2001,16570
+Nissan,Cube,64_5,2010,13790
+Perodua,Kelisa,68_1,2001,4999
+Perodua,Myvi,68_2,2006,6744
+Perodua,Kenari,68_3,2000,5800
+Peugeot,1007,69_1,2005,10687
+Peugeot,208,69_12,2012,9940
+Peugeot,3008,69_13,2009,15790
+Peugeot,306,69_14,1998,17415
+Peugeot,307,69_15,2001,10715
+Peugeot,308,69_18,2007,11805
+Peugeot,106,69_2,1998,6850
+Peugeot,4007,69_21,2007,22535
+Peugeot,406,69_22,1998,14115
+Peugeot,407,69_23,2004,14552
+Peugeot,5008,69_25,2010,17115
+Peugeot,508,69_26,2010,17965
+Peugeot,607,69_28,2000,18015
+Peugeot,807,69_29,2003,18115
+Peugeot,107,69_3,2005,6882
+Peugeot,Bipper Tepee,69_30,2009,9790
+Peugeot,Expert Tepee,69_32,2006,18202
+Peugeot,iOn,69_33,2010,33100
+Peugeot,Partner Tepee,69_35,2008,10950
+Peugeot,RCZ,69_36,2010,20240
+Peugeot,Traveller,69_37,2016,27750
+Peugeot,806,69_38,1998,17585
+Peugeot,Partner Combi,69_39,2001,8930
+Peugeot,108,69_4,2013,8190
+Peugeot,Expert Combi,69_40,2019,27029
+Peugeot,2008,69_5,2013,12940
+Peugeot,206,69_6,1998,8345
+Peugeot,207,69_9,2006,8857
+Porsche,Macan,71_10,2013,40276
+Porsche,Panamera,71_11,2009,61461
+Porsche,718 Boxster,71_2,2015,41739
+Porsche,718 Cayman,71_3,2016,39878
+Porsche,911,71_4,1998,64650
+Porsche,Boxster,71_6,1998,33950
+Porsche,Cayenne,71_8,2003,34350
+Porsche,Cayman,71_9,2006,36220
+Proton,GEN-2,72_1,2004,7160
+Proton,Impian,72_2,2001,11855
+Proton,Persona,72_4,1998,10544
+Proton,Satria Neo,72_5,2000,6819
+Proton,Savvy,72_6,2005,5852
+Proton,Wira,72_7,2000,6819
+Renault,Captur,75_1,2013,13940
+Renault,Koleos,75_10,2008,17730
+Renault,Laguna,75_11,1998,13395
+Renault,Megane,75_12,1998,9820
+Renault,Modus,75_13,2004,9107
+Renault,Scenic,75_14,1998,12820
+Renault,Twingo,75_18,2007,7335
+Renault,Clio,75_2,1998,7815
+Renault,Vel Satis,75_20,2001,20550
+Renault,Wind,75_21,2010,15320
+Renault,Zoe,75_22,2014,23388
+Renault,Espace,75_3,1998,18820
+Renault,Grand Espace,75_5,1998,22120
+Renault,Grand Modus,75_6,2007,10085
+Renault,Grand Scenic,75_7,2003,14430
+Renault,Kadjar,75_8,2015,17940
+Renault,Kangoo,75_9,1999,8820
+Rolls-Royce,Dawn,77_2,2015,264000
+Rolls-Royce,Ghost,77_3,2010,195875
+Rolls-Royce,Phantom,77_4,2003,252038
+Rolls-Royce,Silver Seraph,77_5,1998,155000
+Rolls-Royce,Wraith,77_6,2013,228800
+Rover,25,78_1,1998,7815
+Rover,45,78_2,1998,11325
+Rover,75,78_3,1999,17482
+Rover,City Rover,78_5,2003,6325
+Rover,Mini,78_6,1998,9150
+Rover,Streetwise,78_7,2003,9125
+Rover,600,78_8,1998,15500
+Saab,9-3,81_1,1998,16350
+Saab,9-5,81_3,1998,22345
+SEAT,Alhambra,79_1,1998,17245
+SEAT,Leon,79_10,2000,10815
+SEAT,Mii,79_11,2011,7790
+SEAT,Toledo,79_12,1999,13715
+SEAT,Altea,79_2,2004,12262
+SEAT,Arona,79_4,2017,16340
+SEAT,Arosa,79_5,1998,6820
+SEAT,Ateca,79_6,2016,17935
+SEAT,Cordoba,79_7,1998,9820
+SEAT,Exeo,79_8,2009,17560
+SEAT,Ibiza,79_9,1998,8820
+SKODA,Citigo,80_1,2011,7575
+SKODA,Yeti,80_10,2009,13545
+SKODA,Felicia,80_11,1998,6824
+SKODA,Fabia,80_2,2000,7819
+SKODA,Karoq,80_3,2017,20660
+SKODA,Kodiaq,80_4,2016,21310
+SKODA,Octavia,80_5,1998,11324
+SKODA,Rapid,80_6,2012,12725
+SKODA,Roomster,80_8,2006,9757
+SKODA,Superb,80_9,2002,14020
+Smart,forfour,84_1,2004,7152
+Smart,fortwo,84_2,2001,6170
+Smart,Roadster,84_3,2002,9900
+Ssangyong,Korando,85_1,2011,16770
+Ssangyong,Kyron,85_3,2005,16787
+Ssangyong,Musso,85_4,1998,16490
+Ssangyong,Rexton,85_5,2003,17295
+Ssangyong,Rodius,85_6,2005,14787
+Ssangyong,Tivoli,85_7,2014,12750
+Ssangyong,Tivoli XLV,85_8,2016,17095
+Ssangyong,Turismo,85_9,2013,17465
+Subaru,BRZ,86_1,2012,24615
+Subaru,XV,86_11,2011,21075
+Subaru,Forester,86_2,1998,16275
+Subaru,Impreza,86_3,1998,13790
+Subaru,Justy,86_4,1998,9345
+Subaru,Legacy,86_5,1998,14995
+Subaru,Levorg,86_6,2014,27260
+Subaru,Outback,86_7,2003,19815
+Suzuki,Alto,87_1,1998,6175
+Suzuki,Swift,87_10,1998,6720
+Suzuki,SX4,87_11,2006,9872
+Suzuki,SX4 S-Cross,87_12,2013,14944
+Suzuki,Vitara,87_13,1998,10495
+Suzuki,Wagon R,87_14,1998,7250
+Suzuki,Baleno,87_2,1998,10220
+Suzuki,Celerio,87_3,2014,7944
+Suzuki,Grand Vitara,87_4,1998,13315
+Suzuki,Ignis,87_5,2000,6815
+Suzuki,Jimny,87_6,1998,9820
+Suzuki,Kizashi,87_7,2012,21465
+Suzuki,Liana,87_8,2001,9830
+Suzuki,Splash,87_9,2008,8260
+Tesla,Model S,90_1,2013,55280
+Tesla,Model X,90_2,2016,68980
+Toyota,Celica,92_10,1998,19099
+Toyota,Corolla,92_11,1998,9820
+Toyota,GT86,92_17,2012,24615
+Toyota,iQ,92_20,2009,9240
+Toyota,Land Cruiser,92_21,2003,23810
+Toyota,Land Cruiser Amazon,92_22,1998,36615
+Toyota,Land Cruiser Colorado,92_23,1998,20435
+Toyota,MR2,92_25,1998,22045
+Toyota,Picnic,92_27,1998,15820
+Toyota,Previa,92_29,1998,19700
+Toyota,Auris,92_3,2007,11832
+Toyota,Prius,92_30,2000,16315
+Toyota,RAV4,92_34,1998,14815
+Toyota,Starlet,92_36,1998,7820
+Toyota,Urbancruiser,92_39,2008,14325
+Toyota,Avensis,92_4,1998,13320
+Toyota,Verso,92_40,2009,15565
+Toyota,Yaris,92_44,1999,7315
+Toyota,Avensis Verso,92_5,2001,17615
+Toyota,AYGO,92_6,2005,6632
+Toyota,C-HR,92_8,2016,20810
+Toyota,Camry,92_9,1998,19849
+TVR,Cerbera,88_1,1998,41100
+TVR,Tuscan,88_4,2000,39750
+Vauxhall,ADAM,94_1,2012,11200
+Vauxhall,Crossland X,94_10,2017,16340
+Vauxhall,Frontera,94_11,1998,15475
+Vauxhall,Grandland X,94_12,2017,22095
+Vauxhall,Insignia,94_13,2008,15376
+Vauxhall,Meriva,94_14,2003,9810
+Vauxhall,Mokka,94_15,2012,15770
+Vauxhall,Monaro,94_17,2004,28452
+Vauxhall,Omega,94_19,1998,18875
+Vauxhall,Agila,94_2,2000,6870
+Vauxhall,Signum,94_20,2002,17810
+Vauxhall,Tigra,94_21,1998,12845
+Vauxhall,Vectra,94_22,1998,13325
+Vauxhall,Viva,94_23,2014,7940
+Vauxhall,Vivaro,94_24,2010,23128
+Vauxhall,VX220,94_25,2000,22815
+Vauxhall,VXR8,94_26,2007,34755
+Vauxhall,Zafira,94_27,1999,13320
+Vauxhall,Ampera,94_3,2011,37195
+Vauxhall,Antara,94_4,2007,19605
+Vauxhall,Astra,94_5,1998,11570
+Vauxhall,Cascada,94_7,2012,23805
+Vauxhall,Combo Tour,94_8,2007,12695
+Vauxhall,Corsa,94_9,1998,7595
+Volkswagen,Caravelle,95_11,2003,24560
+Volkswagen,CC,95_12,2011,23980
+Volkswagen,Eos,95_13,2006,19182
+Volkswagen,Fox,95_14,2006,6452
+Volkswagen,Golf,95_15,1998,8948
+Volkswagen,Jetta,95_18,2006,14447
+Volkswagen,Lupo,95_19,1999,7715
+Volkswagen,Arteon,95_2,2017,30790
+Volkswagen,Passat,95_20,1998,15285
+Volkswagen,Phaeton,95_21,2003,42707
+Volkswagen,Polo,95_22,1998,7815
+Volkswagen,Scirocco,95_23,2008,18590
+Volkswagen,Sharan,95_24,1998,17465
+Volkswagen,T-Roc,95_25,2017,18735
+Volkswagen,Tiguan,95_26,2008,18380
+Volkswagen,Touareg,95_28,2003,28410
+Volkswagen,Touran,95_29,2003,14350
+Volkswagen,Beetle,95_3,1999,14770
+Volkswagen,up!,95_33,2011,7940
+Volkswagen,E-Golf,95_36,2019,31020
+Volkswagen,Bora,95_4,1999,14220
+Volkswagen,Caddy Life,95_6,2015,18834
+Volkswagen,Caddy Maxi Life,95_8,2008,15780
+Volkswagen,California,95_9,2005,33792
+Volvo,C30,96_1,2007,14535
+Volvo,V60,96_10,2010,22935
+Volvo,V70,96_12,1998,19320
+Volvo,V90,96_14,2015,34500
+Volvo,XC60,96_16,2008,24485
+Volvo,XC70,96_17,2000,28730
+Volvo,XC90,96_18,2002,29465
+Volvo,S70,96_19,1998,19280
+Volvo,C70,96_2,1998,25480
+Volvo,XC40,96_20,2017,27350
+Volvo,S40,96_3,1998,13820
+Volvo,S60,96_4,2000,19815
+Volvo,S80,96_5,1998,21980
+Volvo,S90,96_6,2015,32500
+Volvo,V40,96_7,1998,14570
+Volvo,V50,96_9,2004,17165

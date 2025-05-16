@@ -35,4 +35,4 @@ for i in range(0, total, batch_size):
     db.photos.insert_many(batch)
     print(f"Záznamy {i} až {min(i+batch_size, total)} vloženy.")
 
-print(f"✅ Import hotov: {db.photos.count_documents({})} záznamů")
+print(f"Import hotov: {db.photos.count_documents({})} záznamů")

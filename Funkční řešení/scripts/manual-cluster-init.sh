@@ -13,15 +13,18 @@ docker compose exec shard01-a bash scripts/init-shard01.js
 docker compose exec shard02-a bash scripts/init-shard02.js
 docker compose exec shard03-a bash scripts/init-shard03.js
 
-# === WAIT FOR SHARDS ===
-echo "Čekám 5 sekund na ustálení replik..."
-sleep 5
+
+# === WAITING FOR MONGOS ===
+echo "Čekám, než bude router01 připraven..."
+until docker compose exec router01 mongosh --host localhost:27017 --eval "db.runCommand({ ping: 1 })" > /dev/null 2>&1; do
+  echo "→ router01 ještě není připraven, čekám 2s..."
+  sleep 2
+done
+
 
 # === ROUTER ===
-echo "Inicializace routeru..."
-docker compose exec router01 sh -c "mongosh < /scripts/init-router.js"
-
-# === WAIT FOR ROUTER ===
+echo "Inicializace routeru (přidání shardů)..."
+docker compose exec router01 mongosh --host localhost:27017 -f /scripts/init-router.js
 echo "Čekám 3 sekund na ustálení routeru..."
 sleep 3
 

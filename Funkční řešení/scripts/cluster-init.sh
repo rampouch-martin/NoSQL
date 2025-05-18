@@ -1,43 +1,52 @@
-
 #!/bin/bash
 
-MARKER_FILE="/scripts/.init_done"
+INIT_MARKER="/data/.cluster_initialized"
 
-if [ -f "$MARKER_FILE" ]; then
-  echo "Inicializace už proběhla – přeskočeno."
+if [ -f "$INIT_MARKER" ]; then
+  echo "Cluster už byl dříve inicializován – přeskočeno."
   exit 0
 fi
 
-echo "Čekám, až se MongoDB kontejnery plně spustí..."
-sleep 15 
+echo "Spouštím inicializaci MongoDB clusteru poprvé..."
+sleep 15
 
+# === CONFIG SERVER ===
 echo "Inicializace config serveru..."
-mongosh --host configsvr01 --file /scripts/init-configserver.js
+mongosh --host configsvr01:27017 -f /scripts/init-configserver.js
 
+# === SHARDS ===
 echo "Inicializace shardů..."
-mongosh --host shard01-a --file /scripts/init-shard01.js
-mongosh --host shard02-a --file /scripts/init-shard02.js
-mongosh --host shard03-a --file /scripts/init-shard03.js
+mongosh --host shard01-a:27017 -f /scripts/init-shard01.js
+mongosh --host shard02-a:27017 -f /scripts/init-shard02.js
+mongosh --host shard03-a:27017 -f /scripts/init-shard03.js
 
-echo "Inicializace routeru..."
-mongosh --host router01 --file /scripts/init-router.js
+# === WAITING FOR MONGOS ===
+echo "Čekám, než bude router01 připraven..."
+until mongosh --host router01:27017 --eval "db.runCommand({ ping: 1 })" > /dev/null 2>&1; do
+  echo "→ router01 ještě není připraven, čekám 2s..."
+  sleep 2
+done
 
-echo "Nastavení autentizace..."
-mongosh --host configsvr01 --file /scripts/auth.js
-mongosh --host shard01-a --file /scripts/auth.js
-mongosh --host shard02-a --file /scripts/auth.js
-mongosh --host shard03-a --file /scripts/auth.js
+# === ROUTER ===
+echo "Inicializace routeru (přidání shardů)..."
+mongosh --host router01:27017 -f /scripts/init-router.js
 
-echo "Zapnutí shardingu..."
-mongosh --host router01 --port 27017 -u "martin" --authenticationDatabase admin --password "rampouch" <<EOF
-if (!db.getSiblingDB("config").databases.find(d => d._id === "RampaBase")) {
-  sh.enableSharding("RampaBase");
-  db.adminCommand({ shardCollection: "RampaBase.MyCollection", key: { oemNumber: "hashed", zipCode: 1, supplierId: 1 } });
-} else {
-  print("Sharding pro databázi RampaBase už je aktivní.");
-}
-EOF
+echo "Čekám 3 sekundy na ustálení routeru..."
+sleep 3
 
-touch "$MARKER_FILE"
-echo "Inicializace hotová!"
+# === AUTENTIZACE ===
+echo "Vytváření uživatele na všech uzlech..."
+for srv in configsvr01 shard01-a shard02-a shard03-a; do
+  echo "- $srv"
+  mongosh --host ${srv}:27017 -f /scripts/auth.js
+  sleep 2
+done
 
+# === ENABLE SHARDING ===
+echo "Zapnutí shardingu pro RampaBase..."
+mongosh --host router01:27017 -u "martin" -p "rampouch" --authenticationDatabase admin -f /scripts/enable-sharding.js
+
+echo "Inicializace MongoDB clusteru dokončena."
+
+# === OZNAČENÍ, ŽE UŽ BYLO INIT ===
+touch "$INIT_MARKER"

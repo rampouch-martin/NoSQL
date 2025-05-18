@@ -1,0 +1,55 @@
+Dataset: Ad_table
+Počet řádků: 268255
+Počet sloupců: 24
+
+Počet null hodnot:
+Maker               0
+ Genmodel           0
+ Genmodel_ID        0
+Adv_ID              0
+Adv_year            0
+Adv_month           0
+Color           21875
+Reg_year            7
+Bodytype          954
+Runned_Miles     1055
+Engin_size       2064
+Gearbox           167
+Fuel_type         409
+Price            1145
+Engine_power    31811
+Annual_Tax      46675
+Wheelbase       27998
+Height          27801
+Width           28080
+Length          27801
+Average_mpg     41933
+Top_speed       43602
+Seat_num         6474
+Door_num         4553
+
+Počet unikátních hodnot:
+Maker               88
+ Genmodel          896
+ Genmodel_ID       881
+Adv_ID          268255
+Adv_year            10
+Adv_month           15
+Color               22
+Reg_year            26
+Bodytype            18
+Runned_Miles     72420
+Engin_size          74
+Gearbox              3
+Fuel_type           13
+Price            20456
+Engine_power       466
+Annual_Tax          28
+Wheelbase          427
+Height             579
+Width              475
+Length             984
+Average_mpg        358
+Top_speed          138
+Seat_num            10
+Door_num             7

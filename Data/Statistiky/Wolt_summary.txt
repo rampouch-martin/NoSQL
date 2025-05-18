@@ -1,0 +1,35 @@
+Dataset: Wolt
+Počet řádků: 18706
+Počet sloupců: 14
+
+Počet null hodnot:
+Unnamed: 0                                                0
+TIMESTAMP                                                 0
+ACTUAL_DELIVERY_MINUTES - ESTIMATED_DELIVERY_MINUTES      0
+ITEM_COUNT                                                0
+USER_LAT                                                  0
+USER_LONG                                                 0
+VENUE_LAT                                                 0
+VENUE_LONG                                                0
+ESTIMATED_DELIVERY_MINUTES                                0
+ACTUAL_DELIVERY_MINUTES                                   0
+CLOUD_COVERAGE                                          277
+TEMPERATURE                                             277
+WIND_SPEED                                              277
+PRECIPITATION                                             0
+
+Počet unikátních hodnot:
+Unnamed: 0                                              18706
+TIMESTAMP                                               15135
+ACTUAL_DELIVERY_MINUTES - ESTIMATED_DELIVERY_MINUTES       72
+ITEM_COUNT                                                 11
+USER_LAT                                                   49
+USER_LONG                                                  72
+VENUE_LAT                                                  55
+VENUE_LONG                                                 84
+ESTIMATED_DELIVERY_MINUTES                                 55
+ACTUAL_DELIVERY_MINUTES                                    53
+CLOUD_COVERAGE                                              5
+TEMPERATURE                                                40
+WIND_SPEED                                                926
+PRECIPITATION                                              23

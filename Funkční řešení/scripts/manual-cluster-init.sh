@@ -54,7 +54,7 @@ echo "Inicializace MongoDB clusteru hotová!"
 
 # === Import data ===
 echo "Importuji data do databáze RampaBase..."
-python3  import_all.py
+python3 import_all.py
 
 echo "Import dat do databáze RampaBase hotov!"
 echo "Script manual-cluster-init.sh hotov!"

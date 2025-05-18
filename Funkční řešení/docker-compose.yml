@@ -79,7 +79,6 @@ services:
   shard01-a:
     build: 
       context: mongodb-build
-    image: jin-mongo:6.0.2 
     container_name: shard-01-node-a
     command: mongod --port 27017 --shardsvr --replSet rs-shard-01 --keyFile /data/mongodb-keyfile
     volumes:

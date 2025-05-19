@@ -1,18 +1,23 @@
 import subprocess
+import sys
+import os
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 print("Import cars...")
-subprocess.run(["python", "import_cars.py"])
+subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "import_cars.py")])
 
 print("Import car_prices...")
-subprocess.run(["python", "import_prices.py"])
+subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "import_prices.py")])
 
 print("Import sales...")
-subprocess.run(["python", "import_sales.py"])
+subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "import_sales.py")])
 
 print("Import Wolt...")
-subprocess.run(["python", "import_wolt.py"])
+subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "import_wolt.py")])
 
 print("Import images... (this may take a while)")
-subprocess.run(["python", "import_images.py"])
+subprocess.run([sys.executable, os.path.join(SCRIPT_DIR, "import_images.py")])
 
 print("All data imported successfully.")
+

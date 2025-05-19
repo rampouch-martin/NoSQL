@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 echo "Čekám, až se MongoDB kontejnery plně spustí..."
 sleep 15
@@ -22,7 +22,7 @@ done
 
 # === ROUTER ===
 echo "Inicializace routeru (přidání shardů)..."
-docker compose exec router01 mongosh --host localhost:27017 -f /scripts/init-router.js
+docker compose exec router01 mongosh --host localhost:27017 -f scripts/init-router.js
 echo "Čekám 3 sekund na ustálení routeru..."
 sleep 3
 
@@ -53,8 +53,10 @@ echo "Inicializace MongoDB clusteru hotová!"
 
 
 # === Import data ===
-echo "Importuji data do databáze RampaBase..."
-python3 import_all.py
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+python3 "$SCRIPT_DIR/import_all.py"
+# echo "Importuji data do databáze RampaBase..."
+# python3 import_all.py
 
 echo "Import dat do databáze RampaBase hotov!"
 echo "Script manual-cluster-init.sh hotov!"

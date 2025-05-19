@@ -8,3 +8,5 @@ __pycache__/
 # Editor metadata
 .vscode/
 .idea/
+
+import_errors/

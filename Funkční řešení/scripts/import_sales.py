@@ -2,12 +2,17 @@ import pandas as pd
 from pymongo import MongoClient, errors
 import json
 from myImportLib import clean_mongo_types
+import os
 
 
 client = MongoClient("mongodb://martin:rampouch@127.0.0.1:27117,127.0.0.1:27118/?authMechanism=DEFAULT")
 db = client["RampaBase"]
 
-df = pd.read_csv("data/sales_cleaned.csv")
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.join(SCRIPT_DIR, "data", "sales_cleaned.csv")
+df = pd.read_csv(DATA_PATH)
+
+# df = pd.read_csv("data/sales_cleaned.csv")
 db.sales.delete_many({})
 
 year_columns = [col for col in df.columns if col.isdigit()]
@@ -42,7 +47,11 @@ for i in range(0, total, batch_size):
             error_log.append(clean_mongo_types(error_doc))
     print(f"Záznamy {i} až {min(i+batch_size, total)} vloženy.")
 
-with open("sales_errors.json", "w", encoding="utf-8") as f:
-    json.dump(error_log, f, ensure_ascii=False, indent=2)
-
-print(f"Import hotov: {db.sales.count_documents({})} záznamů, chyb: {errors_count}")
+if errors_count > 0:
+    os.makedirs(os.path.join(SCRIPT_DIR, "import_errors"), exist_ok=True)
+    with open(os.path.join(SCRIPT_DIR, "import_errors/sales_errors.json"), "w", encoding="utf-8") as f:
+        json.dump(error_log, f, ensure_ascii=False, indent=2)
+    print(f"Import hotov: {db.sales.count_documents({})} záznamů, chyb: {errors_count}")
+    print("Chybové záznamy zapsány do sales_errors.json")
+else:
+    print(f"Import hotov: {db.sales.count_documents({})} záznamů, žádné chyby.")

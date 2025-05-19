@@ -1,15 +1,6 @@
 ### Datasety - téma: Automotive
 
 
-## DVM
-https://deepvisualmarketing.github.io/
-
- 
-Wolt
-https://www.kaggle.com/datasets/muhammadwajeeharif/wolt-delivery-dataset
-
-
-
 # vytvoř venv ve složce .venv
 python3 -m venv .venv
 

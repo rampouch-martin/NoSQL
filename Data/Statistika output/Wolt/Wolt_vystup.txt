@@ -1,0 +1,8 @@
+Počet záznamů: 18706
+Počet sloupců: 16
+Počet chybějících hodnot: 831
+Průměrné zpoždění: -1.20 min
+Mediánové zpoždění: -2.00 min
+Průměrná vzdálenost: 1.02 km
+
+Unikátních kombinací souřadnic uživatelů: 2045 z 18706 záznamů

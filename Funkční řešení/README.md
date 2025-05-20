@@ -1,3 +1,8 @@
+# MongoDB Cluster – Funkční řešení
+
+Tento projekt implementuje distribuovaný MongoDB cluster s podporou shardingu, replikace a importu více datových sad. Obsahuje datovou analýzu v Pythonu, validační skripty a ukázkové MongoDB dotazy.
+
+
 # Instalace MongoDB Clusteru
 
 ## 1. Spuštění Docker kontejnerů
@@ -66,3 +71,42 @@ Funkční řešení/                    # Cluster + skripty + docker-compose
 DVM-Car: https://deepvisualmarketing.github.io/
 
 Wolt Delivery DataSet: https://www.kaggle.com/datasets/muhammadwajeeharif/wolt-delivery-dataset
+
+
+
+## Git LFS – správa velkých datových souborů
+
+Tento projekt používá [Git LFS (Large File Storage)](https://git-lfs.github.com/) pro správu velkých CSV souborů.
+
+### Instalace Git LFS
+
+#### Linux / macOS
+```bash
+sudo apt install git-lfs
+git lfs install
+
+```
+
+#### Windows (přes Chocolatey nebo oficiální instalátor)
+```bash
+choco install git-lfs
+git lfs install
+```
+
+### Klonování projektu
+
+```bash
+git clone https://github.com/rampouch-martin/NoSQL.git
+cd NoSQL
+git lfs pull
+```
+
+### Přidání souborů do LFS
+
+```bash
+git lfs track "*.csv"
+git add .gitattributes
+git add Data/Original/velky_soubor.csv
+git commit -m "Přidán velký CSV soubor přes LFS"
+git push
+```

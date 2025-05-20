@@ -1,0 +1,33 @@
+Počet záznamů: 6333
+Počet sloupců: 5
+Počet chybějících hodnot: 0
+Chybějící hodnoty dle sloupců:
+Maker          0
+Genmodel       0
+Genmodel_ID    0
+Year           0
+Entry_price    0
+dtype: int64
+
+Popisná statistika sloupce 'Price':
+count      6333.000000
+mean      29400.553134
+std       39314.089694
+min        4499.000000
+25%       12310.000000
+50%       17815.000000
+75%       27455.000000
+max      320120.000000
+
+Top 10 modelů podle průměrné ceny:
+Genmodel_ID
+56_2     291846.200000
+77_4     282802.250000
+77_2     266810.000000
+27_12    260908.000000
+45_1     260295.000000
+56_1     254985.800000
+27_16    239051.142857
+77_6     237584.000000
+10_4     231659.750000
+27_19    230129.375000

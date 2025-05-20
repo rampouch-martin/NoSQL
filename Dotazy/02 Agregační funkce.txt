@@ -1,0 +1,106 @@
+7.2.1	Průměrná cena aut podle roku
+
+db.car_prices.aggregate([
+  { $match: { Entry_price: { $gt: 0 }, Year: { $exists: true } }},
+  { $group: {
+    _id: "$Year",
+    avgPrice: { $avg: "$Entry_price" },
+    count: { $sum: 1 }
+  }},
+  { $sort: { avgPrice: -1 }}
+])
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+7.2.2	Top 5 modelů podle počtu inzerátů
+
+db.cars.aggregate([
+  { $group: {
+    _id: "$Genmodel_ID",
+    count: { $sum: 1 }
+  }},
+  { $sort: { count: -1 }},
+  { $limit: 5 }
+])
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+7.2.3	Úhly pohledu u fotek
+
+db.photos.aggregate([
+  { $match: { Predicted_viewpoint: { $exists: true, $ne: null } }},
+  { $group: {
+    _id: "$Predicted_viewpoint",
+    count: { $sum: 1 }
+  }},
+  { $sort: { count: -1 }}
+])
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+7.2.4	Modely s nejvyšším počtem nových registrací v UK (2001–2020)
+
+db.sales.aggregate([
+  { $project: {
+    Genmodel_ID: 1,
+    total_sales: {
+      $reduce: {
+        input: { $objectToArray: "$sales" },
+        initialValue: 0,
+        in: { $add: ["$$value", "$$this.v"] }
+      }
+    }
+  }},
+  { $group: {
+    _id: "$Genmodel_ID",
+    total: { $sum: "$total_sales" }
+  }},
+  { $sort: { total: -1 }},
+  { $limit: 5 }
+])
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+7.2.5	Rozdělení aut podle cenových hladin
+
+db.car_prices.aggregate([
+  { $match: { Entry_price: { $gt: 0 } }},
+  { $bucket: {
+    groupBy: "$Entry_price",
+    boundaries: [0, 10000, 20000, 40000, 60000, 100000],
+    default: "100000+",
+    output: {
+      count: { $sum: 1 },
+      avgPrice: { $avg: "$Entry_price" }
+    }
+  }}
+])
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+7.2.6	Top značky podle počtu inzerátů + průměrná cena
+
+db.cars.aggregate([
+  { $match: { Maker: { $ne: null }, Price: { $gt: 0 } }},
+  { $group: {
+    _id: "$Maker",
+    avgPrice: { $avg: "$Price" },
+    count: { $sum: 1 }
+  }},
+  { $sort: { count: -1 }},
+  { $limit: 5 }
+])
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+7.2.7	Rozložení vozidel podle karoserie (Bodytype)
+
+db.cars.aggregate([
+  { $match: { Bodytype: { $exists: true, $ne: null } }},
+  { $group: {
+    _id: "$Bodytype",
+    count: { $sum: 1 },
+    avgPrice: { $avg: "$Price" }
+  }},
+  { $sort: { count: -1 } }
+])

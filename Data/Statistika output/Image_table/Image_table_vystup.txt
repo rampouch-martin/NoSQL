@@ -1,0 +1,29 @@
+Počet záznamů: 1451784
+Počet sloupců: 5
+Počet chybějících hodnot (celkem): 1364791
+Chybějící hodnoty dle sloupců:
+Genmodel_ID                  0
+Image_ID                     0
+Image_name                   0
+Predicted_viewpoint          0
+Quality_check          1364791
+dtype: int64
+
+Top 10 Genmodel_ID podle počtu obrázků:
+Genmodel_ID
+94_9     31819
+29_14    27983
+29_13    26004
+8_39     20775
+94_5     19087
+64_14    18416
+95_15    18178
+29_27    18123
+7_11     15991
+64_33    15475
+
+Rozložení hodnot Quality_check:
+Quality_check
+NaN    1364791
+P        67184
+N        19809

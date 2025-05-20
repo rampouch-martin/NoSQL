@@ -1,0 +1,33 @@
+7.4.1	Vytvoření složeného indexu pro dotazy podle značky a ceny.
+
+db.cars.createIndex({ Maker: 1, Price: -1 })
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+7.4.2	Vyhodnocení dotazu pomocí explain()
+
+db.car_prices.find({ Genmodel_ID: "77_2" }).explain("executionStats")
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+7.4.3	Použití hint() pro vynucení indexu
+
+db.car_prices.find({ Genmodel_ID: "77_2" }).hint("Genmodel_ID_hashed")
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+7.4.5	TTL index pro dočasná data
+
+db.wolt_data.createIndex(
+  { TIMESTAMP_DATE: 1 },
+  { expireAfterSeconds: 86400 }
+)
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+7.4.6	Analýza vhodnost shard klíče
+
+db.adminCommand({
+  analyzeShardKey: "RampaBase.cars",
+  key: { Adv_ID: "hashed" }
+})

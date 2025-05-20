@@ -1,0 +1,73 @@
+7.1.1	InsertOne s validací a indexem
+
+db.cars.insertOne({
+  Adv_ID: "ADV_TEST_999",
+  Genmodel_ID: "GEN_999",
+  Maker: "TestBrand",
+  Price: 19999,
+  Body: "Hatchback"
+})
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+7.1.2	UpdateMany s podmínkou
+
+db.cars.updateMany(
+  { Maker: "BMW" },
+  { $set: { Maker: "Bayerische Motoren Werke AG" } }
+)
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+7.1.3	DeleteMany s podmínkou
+
+db.cars.deleteMany({ Adv_ID: /^TEST/ }) 
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+7.1.4	ReplaceOne s kontrolou integrity
+
+db.car_prices.replaceOne(
+  { 
+    Genmodel_ID: "80_5",
+    Year: 2009
+  },
+  {
+    Genmodel_ID: "80_5",
+    Year: 2009,
+    Genmodel: "Octavia II Facelift",
+    Entry_price: 17500
+  }
+)
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+7.1.5	Merge pomocí $merge
+
+db.cars.aggregate([
+  {
+    $group: {
+      _id: "$Maker",
+      total_ads: { $sum: 1 }
+    }
+  },
+  {
+    $merge: {
+      into: "car_counts_by_maker",
+      whenMatched: "merge",
+      whenNotMatched: "insert"
+    }
+  }
+])
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+7.1.6	Rename pole pomocí $set + $unset
+
+db.cars.updateMany(
+  { Top_speed: { $exists: true } },
+  [
+    { $set: { TopSpeed: "$Top_speed" } },
+    { $unset: "Top_speed" }
+  ]
+)

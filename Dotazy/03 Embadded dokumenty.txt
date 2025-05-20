@@ -1,0 +1,130 @@
+7.3.1	Převod embedded let do pole pomocí $objectToArray
+
+db.sales.aggregate([
+  { $match: { Maker: /AUDI/, Genmodel: /S6/ }},
+  { $project: {
+    Genmodel_ID: 1,
+    yearsArray: { $objectToArray: "$sales" }
+  }}
+]) 
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+7.3.2	Sečtení všech registrací přes všechny roky
+
+db.sales.aggregate([
+  { $project: {
+    totalSales: {
+      $reduce: {
+        input: { $objectToArray: "$sales" },
+        initialValue: 0,
+        in: { $add: ["$$value", "$$this.v"] }
+      }
+    }
+  }},
+  { $group: {
+    _id: null,
+    totalRegistrations: { $sum: "$totalSales" }
+  }}
+])
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+7.3.3	Seznam registrací pro daný model jako jednotlivé řádky
+
+db.sales.aggregate([
+  { $match: { Genmodel_ID: "2_4" }},
+  { $project: {
+    Genmodel_ID: 1,
+    sales: { $objectToArray: "$sales" }
+  }},
+  { $unwind: "$sales" },
+  { $project: {
+    Genmodel_ID: 1,
+    year: "$sales.k",
+    registrations: "$sales.v"
+  }}
+])
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+7.3.4	Průměrná registrace na model za posledních 5 let
+
+db.sales.aggregate([
+  { $project: {
+    Genmodel_ID: 1,
+    last5: {
+      $filter: {
+        input: { $objectToArray: "$sales" },
+        as: "year",
+        cond: { $gte: ["$$year.k", "2016"] }
+      }
+    }
+  }},
+  { $project: {
+    Genmodel_ID: 1,
+    avgLast5: {
+      $avg: { $map: { input: "$last5", as: "y", in: "$$y.v" } }
+    }
+  }},
+  { $sort: { avgLast5: -1 }},
+  { $limit: 5 }
+])
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+7.3.5	Vypsání modelů, které měly v posledních 5 letech pokles registrací
+
+db.sales.aggregate([
+  {
+    $project: {
+      Genmodel_ID: 1,
+      Genmodel: 1,
+      Maker: 1,
+      last5: {
+        $filter: {
+          input: { $objectToArray: "$sales" },
+          as: "item",
+          cond: { $gte: ["$$item.k", "2016"] }
+        }
+      }
+    }
+  },
+  {
+    $project: {
+      Genmodel_ID: 1,
+      Genmodel: 1,
+      Maker: 1,
+      first: { $arrayElemAt: ["$last5", 0] },
+      last: { $arrayElemAt: ["$last5", -1] }
+    }
+  },
+  {
+    $project: {
+      Genmodel_ID: 1,
+      Genmodel: 1,
+      Maker: 1,
+      drop: { $subtract: ["$last.v", "$first.v"] }
+    }
+  },
+  {
+    $match: { drop: { $lt: 0 } }
+  }
+])
+
+
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+7.3.6	Rozbalení embedded dokumentu years na roky a součty
+db.sales.aggregate([
+  { $project: {
+    Genmodel_ID: 1,
+    sales: { $objectToArray: "$sales" }
+  }},
+  { $unwind: "$sales" },
+  { $group: {
+    _id: "$sales.k",
+    total: { $sum: "$sales.v" }
+  }},
+  { $sort: { _id: 1 } }
+])

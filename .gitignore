@@ -1,0 +1,12 @@
+# Virtuální prostředí
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Editor metadata
+.vscode/
+.idea/
+
+import_errors/

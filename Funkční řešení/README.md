@@ -60,3 +60,9 @@ Funkční řešení/                    # Cluster + skripty + docker-compose
 ├── mongodb-build/                 # Image s keyfile autentizací
 ├── scripts/                       # Inicializační a importní skripty
 ```
+
+## 7. Použité datasety
+
+DVM-Car: https://deepvisualmarketing.github.io/
+
+Wolt Delivery DataSet: https://www.kaggle.com/datasets/muhammadwajeeharif/wolt-delivery-dataset

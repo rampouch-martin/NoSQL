@@ -72,10 +72,8 @@ services:
       - 27121:27017
     restart: always
 
-
 ## Shards
   ## Shards 01
-   
   shard01-a:
     build: 
       context: mongodb-build
@@ -197,21 +195,6 @@ services:
     ports:
       - 27130:27017
     restart: always
-
-  # cluster-init:
-  #   build:
-  #     context: mongodb-build
-  #   container_name: cluster-init
-  #   depends_on:
-  #     - configsvr01
-  #     - shard01-a
-  #     - shard02-a
-  #     - shard03-a
-  #     - router01
-  #   volumes:
-  #     - ./scripts:/scripts
-  #     - ./data/cluster-state:/data
-  #   command: [ "bash", "/scripts/cluster-init.sh" ]
 
 volumes:
   mongodb_cluster_router01_db:

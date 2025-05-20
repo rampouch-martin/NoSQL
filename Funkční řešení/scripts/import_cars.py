@@ -11,8 +11,6 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_PATH = os.path.join(SCRIPT_DIR, "data", "car_advertisements_cleaned.csv")
 df = pd.read_csv(DATA_PATH)
 
-# df = pd.read_csv("data/car_advertisements_cleaned.csv")
-
 db.cars.delete_many({})
 
 batch_size = 10000

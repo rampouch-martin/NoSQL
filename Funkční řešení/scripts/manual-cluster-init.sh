@@ -16,7 +16,7 @@ docker compose exec shard03-a bash scripts/init-shard03.js
 # === WAITING FOR MONGOS ===
 echo "Čekám, než bude router01 připraven..."
 until docker compose exec router01 mongosh --host localhost:27017 --eval "db.runCommand({ ping: 1 })" > /dev/null 2>&1; do
-  echo "→ router01 ještě není připraven, čekám 2s..."
+  echo "router01 ještě není připraven, čekám 2s..."
   sleep 2
 done
 
@@ -51,12 +51,9 @@ docker compose exec router01 mongosh -u "martin" -p "rampouch" --authenticationD
 
 echo "Inicializace MongoDB clusteru hotová!"
 
-
 # === Import data ===
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 python3 "$SCRIPT_DIR/import_all.py"
-# echo "Importuji data do databáze RampaBase..."
-# python3 import_all.py
 
 echo "Import dat do databáze RampaBase hotov!"
 echo "Script manual-cluster-init.sh hotov!"

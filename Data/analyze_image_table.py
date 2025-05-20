@@ -54,8 +54,6 @@ plt.figtext(0.5, -0.12, legend_text, wrap=True, horizontalalignment='center', fo
 plt.tight_layout()
 plt.savefig(os.path.join(OUTPUT_DIR, f"{DATASET_NAME}_viewpoint_histogram_legend.png"), bbox_inches="tight")
 
-
-
 # Barplot top Genmodel_ID
 plt.figure(figsize=(10, 5))
 sns.barplot(x=top_models.values, y=top_models.index)

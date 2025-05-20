@@ -12,8 +12,6 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_PATH = os.path.join(SCRIPT_DIR, "data", "photos_cleaned.csv")
 df = pd.read_csv(DATA_PATH)
 
-# df = pd.read_csv("data/photos_cleaned.csv")
-
 if "_id" in df.columns:
     df = df.drop(columns=["_id"])
 

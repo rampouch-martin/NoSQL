@@ -12,7 +12,6 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_PATH = os.path.join(SCRIPT_DIR, "data", "sales_cleaned.csv")
 df = pd.read_csv(DATA_PATH)
 
-# df = pd.read_csv("data/sales_cleaned.csv")
 db.sales.delete_many({})
 
 year_columns = [col for col in df.columns if col.isdigit()]

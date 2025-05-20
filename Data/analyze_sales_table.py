@@ -66,7 +66,7 @@ plt.ylabel("Genmodel_ID")
 plt.tight_layout()
 plt.savefig(os.path.join(OUTPUT_DIR, f"{DATASET_NAME}_top_models_total_sales.png"))
 
-# Heatmapa prodejů v čase (pouze top 15 modelů)
+# Heatmapa prodejů v čase
 top_15 = df.sort_values("total_sales", ascending=False).head(15)
 heat_data = top_15.set_index("Genmodel_ID")[year_cols]
 

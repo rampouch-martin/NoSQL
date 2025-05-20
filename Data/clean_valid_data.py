@@ -13,7 +13,7 @@ def clean_car_advertisements():
     # Odstranit mezery v názvech sloupců
     df.columns = df.columns.str.strip()
 
-    # Deduplikace podle Adv_ID (má být unikátní pro inzerát)
+    # Deduplikace podle Adv_ID
     if "Adv_ID" in df.columns:
         df = df.drop_duplicates(subset="Adv_ID", keep="first")
 
@@ -25,7 +25,6 @@ def clean_prices():
     file_path = original_dir / "Price_table.csv"
     df = pd.read_csv(file_path)
 
-    # Deduplikace pouze přesné, ne podle Genmodel_ID (rok + cena může být různá)
     df = df.drop_duplicates()
 
     output_path = cleaned_dir / "car_prices_cleaned.csv"
@@ -39,8 +38,6 @@ def clean_photos():
     # Deduplikace podle Image_ID (pokud existuje)
     if "Image_ID" in df.columns:
         df = df.drop_duplicates(subset="Image_ID", keep="first")
-
-    # df = df.head(100000)  # Omezit na 100000 řádků
 
     output_path = cleaned_dir / "photos_cleaned.csv"
     df.to_csv(output_path, index=False)
@@ -72,7 +69,7 @@ def clean_wolt():
     df = pd.read_csv(file_path)
 
     # Odstranění zbytečného sloupce 'Unnamed: 0'
-    if "Unnamed: 0" in df.columns:
+    if "Unnamed: 0" in df.columns: 
         df = df.drop(columns=["Unnamed: 0"])
 
     # Deduplikace podle kombinace USER_LAT + USER_LONG + TIMESTAMP (přibližné určení unikátní objednávky)

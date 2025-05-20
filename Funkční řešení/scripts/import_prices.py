@@ -14,8 +14,6 @@ DATA_PATH = os.path.join(SCRIPT_DIR, "data", "car_prices_cleaned.csv")
 df = pd.read_csv(DATA_PATH)
 df["Entry_price"] = df["Entry_price"].astype(float)  # pro MongoDB validator
 
-
-# df = pd.read_csv("data/car_prices_cleaned.csv")
 db.car_prices.delete_many({})
 
 batch_size = 10000

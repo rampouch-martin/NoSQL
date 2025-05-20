@@ -1,4 +1,6 @@
 ### Datasety - téma: Automotive
+https://deepvisualmarketing.github.io/
+https://www.kaggle.com/datasets/muhammadwajeeharif/wolt-delivery-dataset
 
 
 # vytvoř venv ve složce .venv
@@ -13,7 +15,3 @@ docker compose exec router01 mongosh -u martin -p rampouch --authenticationDatab
 
 MongoCompass
 Connection string router01: mongodb://martin:rampouch@127.0.0.1:27117,127.0.0.1:27118/?authMechanism=DEFAULT
-
-
-Zjištění rozdělení dat na shardech:
-sh.getShardedDataDistribution()

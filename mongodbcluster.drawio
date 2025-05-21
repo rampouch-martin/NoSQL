@@ -1,0 +1,140 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="27.0.6">
+  <diagram name="Stránka-1" id="cv-zZpryZnjVEl56pBw9">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GFj3P8-XTK9ICsax7-t9-37" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1520" y="30" width="1080" height="750" as="geometry" />
+        </mxCell>
+        <mxCell id="qO38Je2xxXXxsApvgFu1-17" value="rs konfigurační servery" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="-1442.5" y="70" width="200" height="200" as="geometry">
+            <mxRectangle x="-180" y="100" width="120" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="mongo-config-01" treeRoot="1" id="qO38Je2xxXXxsApvgFu1-18">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="qO38Je2xxXXxsApvgFu1-17">
+            <mxGeometry x="40" y="40" width="120" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="mongo-config-02" treeRoot="1" id="qO38Je2xxXXxsApvgFu1-19">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="qO38Je2xxXXxsApvgFu1-17">
+            <mxGeometry x="40" y="90" width="120" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="mongo-config-03" treeRoot="1" id="qO38Je2xxXXxsApvgFu1-20">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="qO38Je2xxXXxsApvgFu1-17">
+            <mxGeometry x="40" y="140" width="120" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="GFj3P8-XTK9ICsax7-t9-1" value="Routery" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="-1042.5" y="95" width="160" height="150" as="geometry">
+            <mxRectangle x="-180" y="100" width="120" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="router-01" treeRoot="1" id="GFj3P8-XTK9ICsax7-t9-2">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="GFj3P8-XTK9ICsax7-t9-1">
+            <mxGeometry x="20" y="40" width="120" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="router-02" treeRoot="1" id="GFj3P8-XTK9ICsax7-t9-3">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="GFj3P8-XTK9ICsax7-t9-1">
+            <mxGeometry x="20" y="90" width="120" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Client" treeRoot="1" id="GFj3P8-XTK9ICsax7-t9-5">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="1">
+            <mxGeometry x="-722.5" y="150" width="120" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="GFj3P8-XTK9ICsax7-t9-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1442.5" y="420" width="925" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="GFj3P8-XTK9ICsax7-t9-8" value="rs-shard-01" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="-1387.5" y="480" width="200" height="200" as="geometry">
+            <mxRectangle x="-180" y="100" width="120" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="shard01-a&lt;div&gt;primary&lt;/div&gt;" treeRoot="1" id="GFj3P8-XTK9ICsax7-t9-9">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="GFj3P8-XTK9ICsax7-t9-8">
+            <mxGeometry x="40" y="40" width="120" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="shard01-b" treeRoot="1" id="GFj3P8-XTK9ICsax7-t9-10">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="GFj3P8-XTK9ICsax7-t9-8">
+            <mxGeometry x="40" y="90" width="120" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="shard01-c" treeRoot="1" id="GFj3P8-XTK9ICsax7-t9-11">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="GFj3P8-XTK9ICsax7-t9-8">
+            <mxGeometry x="40" y="140" width="120" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="GFj3P8-XTK9ICsax7-t9-20" value="rs-shard-02" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="-1082.5" y="480" width="200" height="200" as="geometry">
+            <mxRectangle x="-180" y="100" width="120" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="shard02-a&lt;div&gt;primary&lt;/div&gt;" treeRoot="1" id="GFj3P8-XTK9ICsax7-t9-21">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="GFj3P8-XTK9ICsax7-t9-20">
+            <mxGeometry x="40" y="40" width="120" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="shard02-b" treeRoot="1" id="GFj3P8-XTK9ICsax7-t9-22">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="GFj3P8-XTK9ICsax7-t9-20">
+            <mxGeometry x="40" y="90" width="120" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="shard02-c" treeRoot="1" id="GFj3P8-XTK9ICsax7-t9-23">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="GFj3P8-XTK9ICsax7-t9-20">
+            <mxGeometry x="40" y="140" width="120" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="GFj3P8-XTK9ICsax7-t9-24" value="rs-shard-03" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="-772.5" y="480" width="200" height="200" as="geometry">
+            <mxRectangle x="-180" y="100" width="120" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="shard03-a&lt;div&gt;primary&lt;/div&gt;" treeRoot="1" id="GFj3P8-XTK9ICsax7-t9-25">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="GFj3P8-XTK9ICsax7-t9-24">
+            <mxGeometry x="40" y="40" width="120" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="shard03-b" treeRoot="1" id="GFj3P8-XTK9ICsax7-t9-26">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="GFj3P8-XTK9ICsax7-t9-24">
+            <mxGeometry x="40" y="90" width="120" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="shard03-c" treeRoot="1" id="GFj3P8-XTK9ICsax7-t9-27">
+          <mxCell style="whiteSpace=wrap;html=1;align=center;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};" vertex="1" parent="GFj3P8-XTK9ICsax7-t9-24">
+            <mxGeometry x="40" y="140" width="120" height="40" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="GFj3P8-XTK9ICsax7-t9-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qO38Je2xxXXxsApvgFu1-17" target="GFj3P8-XTK9ICsax7-t9-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-872.5" y="390" as="sourcePoint" />
+            <mxPoint x="-822.5" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GFj3P8-XTK9ICsax7-t9-31" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GFj3P8-XTK9ICsax7-t9-1" target="GFj3P8-XTK9ICsax7-t9-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-842.5" y="230" as="sourcePoint" />
+            <mxPoint x="-792.5" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GFj3P8-XTK9ICsax7-t9-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.109;entryY=0.013;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="qO38Je2xxXXxsApvgFu1-17" target="GFj3P8-XTK9ICsax7-t9-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GFj3P8-XTK9ICsax7-t9-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.519;entryY=0.011;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="GFj3P8-XTK9ICsax7-t9-1" target="GFj3P8-XTK9ICsax7-t9-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GFj3P8-XTK9ICsax7-t9-35" value="request" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-878.5" y="140" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GFj3P8-XTK9ICsax7-t9-36" value="response" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-792.5" y="180" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
